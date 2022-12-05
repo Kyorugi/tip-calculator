@@ -3,11 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
     <title>Tip calculator app</title>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount / person Total / person Reset
-
+    <div class="splitter-logo"></div>
+    <div class="splitter-container">
+      <div class="left-side-container">
+        <div class="bill-input">
+          <h3>Bill</h3>
+          <input />
+        </div>
+        <div class="select-tip">
+          <h3>Select Tip %</h3>
+          <div class="percentage-block-1"></div>
+          <div class="percentage-block-2"></div>
+          <div class="percentage-block-3"></div>
+          <div class="percentage-block-4"></div>
+          <div class="percentage-block-5"></div>
+          <div class="percentage-block-6"></div>
+        </div>
+        <div class="people-input-headlines">
+          <p>Number of People</p>
+          <p>Can't be zero</p>
+        </div>
+        <div class="number-of-people-input">
+          <input />
+        </div>
+      </div>
+      <div class="right-side-container">
+        <div class="tip-amount-block">
+          <div class="tip-describe">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <div class="tip-price"></div>
+        </div>
+        <div class="total-price-block">
+          <div class="total-price-describe">
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <div class="total-price"></div>
+        </div>
+      </div>
+      <button>RESET</button>
+    </div>
     <script src="/jscript.js"></script>
   </body>
 </html>
