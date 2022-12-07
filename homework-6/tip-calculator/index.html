@@ -13,44 +13,48 @@
     <div class="splitter-logo"></div>
     <div class="splitter-container">
       <div class="left-side-container">
-        <div class="bill-input">
+        <div class="bill-input-block">
           <h3>Bill</h3>
-          <input />
+          <input type="text" class="bill-input" placeholder="0" />
         </div>
-        <div class="select-tip">
+        <div>
           <h3>Select Tip %</h3>
-          <div class="percentage-block-1"></div>
-          <div class="percentage-block-2"></div>
-          <div class="percentage-block-3"></div>
-          <div class="percentage-block-4"></div>
-          <div class="percentage-block-5"></div>
-          <div class="percentage-block-6"></div>
+        </div>
+        <div class="select-tip-percentage">
+          <button class="percentage-block-1">5%</button>
+          <button class="percentage-block-2">10%</button>
+          <button class="percentage-block-3">15%</button>
+          <button class="percentage-block-4">25%</button>
+          <button class="percentage-block-5">50%</button>
+          <input type="text" class="percentage-block-6" placeholder="Custom" />
         </div>
         <div class="people-input-headlines">
-          <p>Number of People</p>
+          <h3>Number of People</h3>
           <p>Can't be zero</p>
         </div>
         <div class="number-of-people-input">
-          <input />
+          <input type="text" class="person-input" placeholder="0" />
         </div>
       </div>
       <div class="right-side-container">
-        <div class="tip-amount-block">
-          <div class="tip-describe">
-            <p>Tip Amount</p>
-            <p>/ person</p>
+        <div class="prices-block">
+          <div class="tip-amount-block">
+            <div class="tip--total-description">
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <div class="tip-price"><spam>$</spam>0.00</div>
           </div>
-          <div class="tip-price"></div>
-        </div>
-        <div class="total-price-block">
-          <div class="total-price-describe">
-            <p>Total</p>
-            <p>/ person</p>
+          <div class="total-price-block">
+            <div class="tip--total-description">
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+            <div class="total-price"><spam>$</spam>0.00</div>
           </div>
-          <div class="total-price"></div>
         </div>
+        <button>RESET</button>
       </div>
-      <button>RESET</button>
     </div>
     <script src="/jscript.js"></script>
   </body>
