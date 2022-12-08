@@ -1,0 +1,328 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /**## Colors */
+
+  /*### Primary */
+
+  --primary-color: hsl(172, 67%, 45%);
+
+  /*### Neutral */
+
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/*------------BODY AND LOGO-------------------*/
+
+body {
+  background-color: var(--Light-grayish-cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Space Mono", monospace;
+}
+
+.splitter-logo {
+  background-image: url(/images/logo.svg);
+  background-image: url(/images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  padding-top: 100px;
+  width: 200px;
+}
+
+/*-----------SPLITTER CONTAINER--------------*/
+
+.splitter-container {
+  background-color: var(--White);
+  border-radius: 20px;
+  width: 920px;
+  height: 475px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5x;
+  position: relative;
+  z-index: 2;
+}
+
+/*------------LEFT SIDE CONTAINER--------------*/
+
+.left-side-container {
+  display: flex;
+  flex-direction: column;
+  margin: 35px;
+  min-width: 300px;
+  flex: 1;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  color: var(--Dark-grayish-cyan);
+}
+
+.bill-input,
+.person-input {
+  background: url(/images/icon-dollar.svg) no-repeat left;
+  background-position: 15px 15px;
+  padding-right: 15px;
+  min-width: 380px;
+  height: 48px;
+  border: none;
+  background-color: var(--Very-light-grayish-cyan);
+  border-radius: 5px;
+  text-align: end;
+  margin-left: 10px;
+  color: var(--Very-dark-cyan);
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  cursor: pointer;
+}
+
+.bill-input:hover,
+.person-input:hover,
+.percentage-block-6:hover {
+  border-color: var(--primary-color);
+  border-style: solid;
+  border-width: thin;
+}
+
+.bill-input:focus,
+.person-input:focus,
+.percentage-block-6:focus {
+  outline-color: var(--primary-color);
+  border: 1px solid;
+}
+
+.person-input {
+  background: url(/images/icon-person.svg) no-repeat left;
+  background-color: var(--Very-light-grayish-cyan);
+  background-position: 15px 15px;
+}
+
+.select-tip-percentage {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.percentage-block-1,
+.percentage-block-2,
+.percentage-block-3,
+.percentage-block-4,
+.percentage-block-5 {
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  min-width: 115px;
+  max-width: 115px;
+  height: 48px;
+  border-radius: 5px;
+  margin: 7px;
+  font-size: 24px;
+}
+
+.percentage-block-6 {
+  background-color: var(--Very-light-grayish-cyan);
+  color: var(--Very-dark-cyan);
+  min-width: 115px;
+  max-width: 115px;
+  height: 48px;
+  border-radius: 5px;
+  margin: 7px;
+  font-size: 24px;
+  text-align: center;
+  border: none;
+  font-family: "Space Mono", monospace;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: var(--Light-grayish-cyan);
+}
+
+.percentage-block-6::placeholder {
+  color: var(--Dark-grayish-cyan);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.people-input-headlines {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.people-input-headlines h3,
+p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: var(--Dark-grayish-cyan);
+}
+
+/*------------RIGHT SIDE CONTAINER--------------*/
+.right-side-container {
+  background-color: var(--Very-dark-cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  min-width: 300px;
+  border-radius: 15px;
+  flex: 1;
+}
+
+.prices-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
+  margin-top: 50px;
+}
+
+.tip-amount-block {
+  color: var(--Light-grayish-cyan);
+  width: 335px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 15px;
+}
+
+.tip-price,
+.total-price {
+  font-size: 45px;
+  color: var(--primary-color);
+}
+
+img {
+  color: var(--primary-color);
+  size: 45px;
+}
+
+.total-price-block {
+  color: var(--Light-grayish-cyan);
+  width: 335px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 15px;
+}
+
+.tip--total-description p {
+  font-size: 16px;
+  color: var(--White);
+}
+
+span {
+  color: var(--Grayish-cyan);
+  font-size: 13px;
+}
+
+button {
+  width: 350px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: var(--Very-dark-cyan);
+  background-color: var(--Dark-grayish-cyan);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Space Mono";
+  margin-bottom: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: var(--Very-dark-cyan);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--primary-color);
+}
+
+/*-------------Mobile Version ----------------*/
+
+@media screen and (max-width: 935px) {
+  .splitter-container {
+    height: 760px;
+    width: 375px;
+  }
+
+  .right-side-container {
+    margin: 25px;
+    height: 250px;
+  }
+
+  .left-side-container {
+    margin: 10px;
+  }
+
+  .bill-input,
+  .person-input {
+    min-width: 310px;
+  }
+
+  .bill-input-block {
+    margin-right: 0px;
+  }
+
+  .select-tip-percentage {
+    justify-content: space-evenly;
+  }
+
+  .reset-btn {
+    width: 290px;
+    margin-bottom: 20px;
+  }
+
+  .prices-block {
+    margin-top: 15px;
+    justify-content: space-around;
+  }
+
+  .tip-price,
+  .total-price {
+    font-size: 35px;
+    margin-right: 20px;
+  }
+  .tip--total-description {
+    margin-left: 20px;
+  }
+
+  .percentage-block-1,
+  .percentage-block-2,
+  .percentage-block-3,
+  .percentage-block-4,
+  .percentage-block-5,
+  .percentage-block-6 {
+    max-width: 145px;
+  }
+}
