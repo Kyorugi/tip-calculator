@@ -126,11 +126,7 @@ h3 {
   flex-direction: row;
 }
 
-.percentage-block1,
-.percentage-block2,
-.percentage-block3,
-.percentage-block4,
-.percentage-block5 {
+.percentage-block {
   background-color: var(--Very-dark-cyan);
   color: var(--White);
   min-width: 115px;
@@ -139,6 +135,12 @@ h3 {
   border-radius: 5px;
   margin: 7px;
   font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Space Mono";
 }
 
 .percentage-custom-block {
@@ -153,7 +155,6 @@ h3 {
   text-align: center;
   border: none;
   font-family: "Space Mono", monospace;
-  cursor: pointer;
 }
 
 ::placeholder {
@@ -162,6 +163,10 @@ h3 {
 
 .percentage-custom-block::placeholder {
   color: var(--Dark-grayish-cyan);
+}
+
+.percentage-block1::placeholder {
+  color: white;
 }
 
 input:focus::placeholder {
